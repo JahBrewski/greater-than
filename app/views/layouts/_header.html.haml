@@ -13,9 +13,7 @@
       #main-nav-collapse.collapse.navbar-collapse
         %ul.nav.navbar-nav.navbar-right
           %li= link_to "Profile", "#"
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
-              Account
-              %b.caret
-            %ul.dropdown-menu
-              %li= link_to "Account Settings", "#"
+          - if user_signed_in?
+            %li= link_to "Logout", destroy_user_session_path, :method => :delete
+          - else
+            %li= link_to "Login", new_user_session_path
