@@ -3,7 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 jQuery ->
   setInterval () ->
-    power_nouns = [ "disease", "death", "my wheelchair" ]
+    power_nouns = [ "disease", "disablity", "cancer", "surgery", "vitals", "pills" ]
     random_noun = power_nouns[Math.floor(Math.random()*power_nouns.length)]
     $(".power-noun").fadeOut () ->
       $(this).text(random_noun).fadeIn()
