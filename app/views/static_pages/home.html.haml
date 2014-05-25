@@ -1,0 +1,9 @@
+.container-fluid
+  .row
+    .col-md-12
+      %h1.text-center Hello.
+      %h2.text-center What's your name?
+      .row
+        .col-md-2.col-md-offset-5
+          .form-group
+            = text_field_tag "name", value = nil, class: "form-control"
