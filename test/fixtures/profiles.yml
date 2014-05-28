@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  age: 1
+  location: MyString
+  affliction: MyString
+  tags: MyText
+
+two:
+  age: 1
+  location: MyString
+  affliction: MyString
+  tags: MyText

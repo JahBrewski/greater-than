@@ -1,0 +1,17 @@
+.container-fluid
+  .row
+    .col-md-4.col-md-offset-4
+      %h2.text-center Welcome back!
+      = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+        .form-group
+          = f.text_field :email, :autofocus => true, placeholder: "Email", :class => "form-control"
+        .form-group
+          = f.password_field :password, placeholder: "Password", :class => "form-control"
+        - if devise_mapping.rememberable?
+          %div
+            = f.check_box :remember_me
+            = f.label :remember_me
+        .form-group.text-center
+          = f.submit "Sign in", :class => "btn btn-lg btn-default"
+        .links.text-center
+          = render "devise/shared/links"
