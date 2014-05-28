@@ -1,5 +1,13 @@
+html, body { height: 100%; }
 body {
   padding-top: 60px;
+}
+
+.container-fluid, .row { height: 100%; }
+
+.main-container {
+  border-left: solid black 4px;
+  border-right: solid black 4px;
 }
 
 .power-phrase {
@@ -11,6 +19,19 @@ body {
   padding: 20px;
 }
 
+.tag-item-container {
+  font-size: 40px;
+  line-height: 0.8;
+}
 
+.tag-items {
+  font-size: 40px;
+}
 
+.profile-image {
+  width: 100%;
+  padding-bottom: 20px;
+  max-width: 150px;
+  margin: 0 auto;
+}
 

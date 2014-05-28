@@ -1,5 +1,5 @@
 GreaterThan::Application.routes.draw do
-  devise_for :users
+  devise_for :users, :controllers => { :registrations => "registrations" }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -7,6 +7,7 @@ GreaterThan::Application.routes.draw do
   root 'static_pages#home'
 
   get 'topics' => 'topics#index'
+  get 'profile' => 'profiles#show'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
