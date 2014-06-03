@@ -6,7 +6,10 @@ GreaterThan::Application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'static_pages#home'
 
-  get 'topics' => 'topics#index'
+  resources :topics
+  resources :conversations
+  resources :replies
+
   get 'profile' => 'profiles#show'
 
   # Example of regular route:

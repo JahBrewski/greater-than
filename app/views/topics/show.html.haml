@@ -1,0 +1,18 @@
+.container-fluid
+  .row
+    .col-md-1.col-md-offset-3
+      .back-button.pull-right= link_to "<", topics_path
+    .col-md-4
+      %table.table
+        %thead
+          %tr
+            %th.h1= @topic.title
+        %tbody
+          %tr
+            %td= link_to "Start new conversation", new_conversation_path(topic_id: @topic.id)
+          - if @conversations.any?
+            - @conversations.each do |convo|
+              %tr
+                %td
+                  %span.conversation-item.h3= link_to convo.title, convo
+

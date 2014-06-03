@@ -1,0 +1,13 @@
+.container-fluid
+  .row
+    .col-md-4.col-md-offset-4
+      %h1 Start a Conversation
+      = form_for :conversation, url: conversations_path do |f|
+        .form-group
+          = f.text_field :title, placeholder: "Title", :class => "form-control"
+        .form-group
+          = f.text_area :content, placeholder: "Content", :class => "form-control"
+        .form-group.text-center
+          = f.hidden_field :topic_id, :value => @topic_id
+          = f.submit 
+        

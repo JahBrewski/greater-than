@@ -5,5 +5,8 @@ $secondary-font: 'Shadows Into Light', cursive;
 
 }
 h1, h2, h3 {
-  font-family: $secondary-font;
+  //font-family: $secondary-font;
+}
+.secondary {
+  font-family: $secondary-font !important;
 }

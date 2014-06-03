@@ -1,28 +1,11 @@
 .container-fluid
   .row
     .col-md-4.col-md-offset-4
-      %h1.text-center Topics
-      .row
-        .col-sm-6
-          .subject-box
-            = image_tag("hobbies.png", :class => "img-responsive")
-        .col-sm-6
-          .subject-box
-            = image_tag("stories.png", :class => "img-responsive")
-      .row
-        .col-sm-6.text-center
-          %h2 Hobbies
-        .col-sm-6.text-center
-          %h2 Stories
-      .row
-        .col-sm-6
-          .subject-box
-            = image_tag("struggles.png", :class => "img-responsive")
-        .col-sm-6
-          .subject-box
-            = image_tag("family.png", :class => "img-responsive")
-      .row
-        .col-sm-6.text-center
-          %h2 Struggles
-        .col-sm-6.text-center
-          %h2 Family
+      %table.table
+        %thead
+          %tr
+            %th.h1 Topics
+        %tbody
+        - @topics.each do |topic|
+          %tr
+            %td= link_to topic.title, topic

@@ -1,0 +1,11 @@
+.container-fluid
+  .row
+    .col-md-4.col-md-offset-4
+      %h1.text-center Reply to Conversation
+      = form_for :reply, url: replies_path do |f|
+        .form-group
+          = f.text_area :content, placeholder: "Content", :class => "form-control"
+          = f.hidden_field :conversation_id, :value => @conversation_id
+        .form-group.text-center
+          = f.submit 
+        

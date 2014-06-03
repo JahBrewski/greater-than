@@ -1,0 +1,20 @@
+.container-fluid
+  .row
+    .col-md-1.col-md-offset-3
+      .back-button.pull-right= link_to "<", @conversation.topic
+    .col-md-4
+      %table.table
+        %thead
+          %tr
+            %th
+              %span.h1= @conversation.title
+              - if @conversation.content
+                %span.h3= @conversation.content
+        %tbody
+          %tr
+            %td= link_to "Add to conversation", new_reply_path(conversation_id: @conversation.id)
+          - if @replies.any?
+            - @replies.each do |reply|
+              %tr
+                %td
+                  %span.h3= reply.content
