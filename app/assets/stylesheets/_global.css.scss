@@ -5,9 +5,11 @@ body {
 
 .container-fluid, .row { height: 100%; }
 
-.main-container {
+
+.border {
   border-left: solid black 4px;
   border-right: solid black 4px;
+  margin: 0 10px 0 10px;
 }
 
 .power-phrase {
