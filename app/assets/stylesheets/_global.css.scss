@@ -34,11 +34,18 @@ body {
   }
 }
 
+.button-container {
+  min-height: 69px;
+}
+
 .back-button {
   font-size: 36px;
   padding: 8px;
   a {
     color: black;
+  }
+  @media (max-width:992px) {
+    float: left !important;
   }
 }
 
