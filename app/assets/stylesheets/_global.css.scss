@@ -21,13 +21,6 @@ body {
   font-size: 40px;
 }
 
-.profile-image {
-  width: 100%;
-  padding-bottom: 20px;
-  max-width: 150px;
-  margin: 0 auto;
-}
-
 .conversation-item {
   a {
   color: black;
@@ -48,4 +41,12 @@ body {
     float: left !important;
   }
 }
+
+.topic {
+  a {
+    font-size: 2em;
+    color: black;
+  }
+}
+
 

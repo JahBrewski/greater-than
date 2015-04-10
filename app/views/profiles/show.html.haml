@@ -2,26 +2,24 @@
 .container-fluid
   .row
     .col-sm-6.col-sm-offset-3.main-container
+      .row.profile-top
+        .profile-pic
+          = image_tag("struggles.png", :class => "img-responsive profile-image img-circle")
+        .name
+          = @user.first_name
       .row
-        .col-xs-6
-          = image_tag("struggles.png", :class => "img-responsive profile-image")
-        .col-xs-6
-          .ul.tag-item-container
-            .li= @user.first_name
-            .li 23
-            .li Nashville
-            .li Cancer
-      .row
-        .col-xs-8.well
-          %p Bacon ipsum dolor sit amet ham rump bacon, ball tip pork chop leberkas boudin frankfurter tail shank tri-tip swine. Ham flank shank, meatball pig leberkas t-bone. Strip steak ham venison brisket leberkas turkey pastrami jowl. Bresaola pork chop pancetta chuck filet mignon tail.
-        .col-xs-4
-          = image_tag("hobbies.png", :class => "img-responsive profile-image")
+        .well
+          %p Hey! I'm Joel. I'm 13 and I love movies, snowboarding, and pizza. Oh, and I've got a dog named Sushi. She's basically the devil (jkjk). Oh and I like to read. Books, you know, like Harry Potter and Lord of the Rings, etc. Peace!
 
       .row
-        .col-xs-4
-          = image_tag("family.png", :class => "img-responsive profile-image")
-        .col-xs-8.well
-          %p Bacon ipsum dolor sit amet ham rump bacon, ball tip pork chop leberkas boudin frankfurter tail shank tri-tip swine. Ham flank shank, meatball pig leberkas t-bone. Strip steak ham venison brisket leberkas turkey pastrami jowl. Bresaola pork chop pancetta chuck filet mignon tail.
-
-          %p Flank rump prosciutto tongue, bresaola porchetta meatball biltong salami t-bone spare ribs. Fatback meatloaf drumstick, meatball pork loin boudin tenderloin. Venison ground round swine, boudin bacon rump fatback doner tail prosciutto tongue drumstick cow shankle shank. Prosciutto sausage turkey, porchetta spare ribs shankle flank bresaola pancetta.
+        .well.interests
+          \#snowboarding
+          %br
+          \#piano
+          %br
+          \#lordoftherings
+          %br
+          \#harrypotter
+          %br
+          \#switchfoot
 

@@ -1,3 +1,36 @@
 .profiles-show, .container-fluid, .row, .border {
   height: 100%;
 }
+
+.name {
+  font-size: 3.5em;
+  text-align: center;
+}
+
+.profile-image {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+  border: 3px solid rgb(126, 90, 23); 
+  padding: 10px;
+}
+
+.interests {
+  font-size: 2em;
+  padding-left: 20px;
+}
+
+.profile-top {
+  background: rgb(255, 168, 63);
+  margin-bottom: 8px;
+  border-right: 10px solid rgb(126, 90, 23);
+  border-bottom: 10px solid rgb(126, 90, 23);
+  color: white;
+  padding-top: 20px;
+}
+
+.well {
+  background-color: rgba(126, 90, 23, 0.1);
+  border-radius: 0;
+  margin-bottom: 8px;
+}

@@ -1,11 +1,10 @@
 .container-fluid
   .row
-    .col-md-4.col-md-offset-4
-      %table.table
-        %thead
-          %tr
-            %th.h1 Topics
-        %tbody
-        - @topics.each do |topic|
-          %tr
-            %td= link_to topic.title, topic
+    .col-sm-6.col-sm-offset-3.main-container
+      .row.profile-top
+        .name
+          Topics
+      - @topics.each do |topic|
+        .row
+          .well.topic
+            = link_to topic.title, topic
